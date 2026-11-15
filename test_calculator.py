@@ -1,3 +1,6 @@
+# https://github.com/TyH979/lab11-THH-YRT
+# Partner 1: Ty Holmgren
+# Partner 2: Yoav Tsadok
 import unittest
 from calculator import *
 
