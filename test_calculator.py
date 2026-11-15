@@ -18,22 +18,22 @@ class TestCalculator(unittest.TestCase):
     ##########################
 
     ######## Partner 1
-    def test_multiply(self):
-        self.assertEqual(multiply(4, 8), 32)
-        self.assertEqual(multiply(-2, 2), -4)
-        self.assertEqual(multiply(0, 1), 0)
+    def test_mul(self):
+        self.assertEqual(mul(4, 8), 32)
+        self.assertEqual(mul(-2, 2), -4)
+        self.assertEqual(mul(0, 1), 0)
 
     
     def test_divide(self):
-        self.assertEqual(divide(5, 10), 2)
-        self.assertEqual(divide(-4, 8), -2)
-        self.assertEqual(divide(7, 0), 0.0) 
+        self.assertEqual(div(5, 10), 2)
+        self.assertEqual(div(-4, 8), -2)
+        self.assertEqual(div(7, 0), 0.0) 
     ###########################
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
          with self.assertRaises(ValueError):
-             divide(0, 5)
+             div(0, 5)
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(logarithm(2, 8), 3)
